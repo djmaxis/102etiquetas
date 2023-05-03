@@ -1,0 +1,275 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Manual de lenguaje html. P&aacute;gina 11</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="hoja.css" type="text/css">
+
+<META NAME="Title" CONTENT="Manual de Lenguaje HTML">
+<META NAME="Author" CONTENT="Ángel Ricardo Puente Pérez">
+<META NAME="Subject" CONTENT="Elaboracion de paginas web con el lenguaje HTML">
+<META NAME="Description" CONTENT="Manual de Lenguaje HTML de nivel inicial, medio y avanzado">
+<META NAME="Keywords" CONTENT="lenguaje html, manual, tutorial, curso, diseño web">
+<META NAME="Generator" CONTENT="Macromedia dreamweaver">
+<META NAME="Language" CONTENT="Spanish">
+<META NAME="Revisit" CONTENT="1 day">
+<META NAME="Distribution" CONTENT="Global">
+<META NAME="Robots" CONTENT="All">
+
+<script language="JavaScript" type="text/javascript">
+<!--
+<!--
+// Idea by:  Nic Wolfe (Nic@TimelapseProductions.com) -->
+<!-- Web URL:  http://fineline.xs.mw -->
+
+<!-- Begin
+function popUp(URL) {
+day = new Date();
+id = day.getTime();
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=yes,scrollbars=1,location=0,statusbar=1,status=1,menubar=0,resizable=1,width=600,height=200,left = 0,top = 0');");
+}
+// End 
+// -->
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link rel="shortcut icon" href="../imag/icono.ico">
+
+
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+}
+body {
+	background-color: #F4DAB3;
+}
+-->
+</style></head>
+
+<body text="#330000" onLoad="MM_preloadImages('../imag/3.gif')">
+<table width="95%" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0" bgcolor="#CCCCCC">
+        <tr> 
+          <td width="33%"> <div align="left"><font color="#000000" size="-4">2002 a 2006 </font></div></td>
+          <td width="34%" bgcolor="#CCCCCC"> <div align="center"><a href="../index.htm" title="Ir al documento inicial"><font color="#FFFFFF" size="-1"> 
+              <strong>manual de lenguaje html </strong></font></a></div></td>
+          <td width="33%"> <div align="right"><font color="#000000" size="-4">&Aacute;ngel 
+              R. Puente P&eacute;rez</font></div></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" bgcolor="#F4DAB3">
+        <tr> 
+          <td width="33%"><a href="diez.htm"><img src="../imag/11.gif" alt="Ir a la p&aacute;gina anterior" title="Ir a p&aacute;gina anterior" width="80" height="20" border="0"></a></td>
+          <td width="34%"> <div align="center"> <a href="contenidos.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','../imag/3.gif',1)"><img src="../imag/2.gif" alt="Ir al índice de contenidos" name="Image12" width="80" height="20" border="0"></a></div></td>
+          <td width="33%"> <div align="right"><a href="doce.htm"><img src="../imag/10.gif" alt="Ir a la p&aacute;gina siguiente" title="Ir a la p&aacute;gina siguiente" width="80" height="20" border="0"></a></div></td>
+        </tr>
+      </table>
+      <p><b><font size="+1">13.4.- Tablas con celdas de distinto tama&ntilde;o.<a name="13_4"></a></font></b></p>
+      <p align="justify"><b>Es bastante habitual tener que dise&ntilde;ar este tipo de tablas: 
+        Una celda puede ocupar dos columnas, tres,... o dos filas, tres,...</b></p>
+      <p><b>Supongamos que tenemos que dise&ntilde;ar una tabla como &eacute;sta:</b></p>
+      <table width="30%" border="1" align="center" bgcolor="#ffcccc">
+        <tr> 
+          <td colspan="4">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td rowspan="2">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+      </table>
+      <p align="justify"><b>Para no liarse, lo primero que hay que tener claro es el <u>n&uacute;mero 
+        m&aacute;ximo de columnas y filas</u> que tiene la tabla: En este caso 
+        es <span class="palabras_clave">4 columnas</span> y <span class="palabras_clave">3 
+        filas</span>. Pues bien, tendremos que establecer <span class="palabras_clave">4 
+        celdas</span> en cada una de las 3 filas. Luego, agruparemos celdas con 
+        las etiquetas correspondientes.</b></p>
+      <p align="justify"><b>Empezamos con la primera fila. Se extiende ocupando las 4 columnas. 
+        La etiqueta que debemos emplear es un atributo para la primera celda de 
+        la primera fila (debe <span class="palabras_clave">&quot;extenderse&quot;</span> 
+        sobre las cuatro columnas) <span class="etiquetas">&lt;td colspan=&quot;4&quot;&gt;</span>. 
+        L&oacute;gicamente la primera fila ya se ha acabado.</b></p>
+      <p align="justify"><b>Pasamos a la segunda fila. La primera celda se extiende sobre 2 filas. 
+        Escribiremos <span class="etiquetas">&lt;td rowspan=&quot;2&quot;&gt;</span>. 
+        Despu&eacute;s de esta celda siguen las otras tres que son normales.</b></p>
+      <p align="justify"><b>Por &uacute;ltimo definimos la tercera fila. Como <u>la primera celda 
+        ya ha sido definida en la fila anterior</u>, s&oacute;lo nos queda la 
+        segunda celda, que es normal, y la tercera que se extiende sobre dos columnas 
+        <span class="etiquetas">&lt;td colspan=&quot;2&quot;&gt;</span></b></p>
+      <p align="justify"><b>Pondremos un <span class="texto_codigo">&amp;nbsp;</span> para meter 
+        algo aunque no se vea y, para asegurarnos de la simetr&iacute;a de la 
+        tabla, estableceremos el ancho con el atributo <span class="texto_codigo">width</span> 
+        en la tabla (30% por ejemplo) y una proporci&oacute;n del espacio total 
+        de la tabla en cada columna (25%) y lo haremos en las celdas que nos parezca 
+        (en las &quot;normales&quot; de ancho).</b></p>
+      <p><b>El c&oacute;digo podr&iacute;a quedar as&iacute;:</b></p>
+      <table width="56%" border="0" align="center" bgcolor="#FFFFFF">
+        <tr> 
+          <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+Tablas 5
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table border align=&quot;center&quot; width=&quot;30%&quot; 
+                    bgcolor=&quot;#ffcccc&quot;&gt;
+   &lt;tr&gt;
+       &lt;td colspan=&quot;4&quot;&gt;&amp;nbsp;&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+       &lt;td rowspan=&quot;2&quot; width=&quot;25%&quot;&gt;&amp;nbsp;&lt;/td&gt;
+       &lt;td width=&quot;25%&quot;&gt;&amp;nbsp;&lt;/td&gt;
+       &lt;td width=&quot;25%&quot;&gt;&amp;nbsp;&lt;/td&gt;
+       &lt;td width=&quot;25%&quot;&gt;&amp;nbsp;&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+       &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+       &lt;td colspan=&quot;2&quot;&gt;&amp;nbsp;&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre> 
+          </td>
+        </tr>
+      </table>
+      <div align="center"> <a href="javascript:popUp('../ejemplos/17.html')">resultado</a> 
+      </div>
+      <p><b><font size="+1">13.5.- T&iacute;tulo de la tabla.<a name="13_5"></a></font></b></p>
+      <p align="justify"><b>Disponemos de una etiqueta para poner el t&iacute;tulo de la tabal. 
+        Es <span class="etiquetas">&lt;caption&gt;</span> con su correspondiente 
+        de cierre. Se coloca despu&eacute;s de la etiqueta de definici&oacute;n 
+        de la tabla y a&ntilde;ade un texto por encima de la tabla y centrado 
+        con &eacute;sta.</b></p>
+      <table width="56%" border="0" align="center" bgcolor="#FFFFFF">
+        <tr> 
+          <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+Tablas 6
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table border align=&quot;center&quot; width=&quot;30%&quot; 
+                    bgcolor=&quot;#ffcccc&quot;&gt;
+&lt;caption&gt;&Eacute;ste es el t&iacute;tulo de la tabla&lt;/caption&gt;
+   &lt;tr&gt;
+       &lt;td colspan=&quot;4&quot;&gt;&amp;nbsp;&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+       &lt;td rowspan=&quot;2&quot; width=&quot;25%&quot;&gt;&amp;nbsp;&lt;/td&gt;
+       &lt;td width=&quot;25%&quot;&gt;&amp;nbsp;&lt;/td&gt;
+       &lt;td width=&quot;25%&quot;&gt;&amp;nbsp;&lt;/td&gt;
+       &lt;td width=&quot;25%&quot;&gt;&amp;nbsp;&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+       &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+       &lt;td colspan=&quot;2&quot;&gt;&amp;nbsp;&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre> 
+          </td>
+        </tr>
+      </table>
+      <div align="center"> <a href="javascript:popUp('../ejemplos/18.html')">resultado</a> 
+      </div>
+      <p><b><font size="+1">13.6.- Celdas de cabecera.<a name="13_6"></a></font></b></p>
+      <p align="justify"><b>Disponemos de una etiqueta especial para aquellas celdas que son cabecera 
+        respecto de las celdas situadas debajo de ellas. Son las etiquetas <span class="etiquetas">&lt;TH&gt;</span> 
+        (<span class="english">table header</span>). El texto situado en ellas 
+        queda centrado y en negrita. Lo &uacute;nico que hay que hacer es sustituir 
+        la etiqueta normal de celda por esta otra.</b></p>
+      <table width="56%" border="0" align="center" bgcolor="#FFFFFF">
+        <tr> 
+          <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+Tablas 7
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table border align=&quot;center&quot; width=&quot;50%&quot; 
+                    bgcolor=&quot;#ffcccc&quot;&gt;
+&lt;caption&gt;Ejemplo de celdas de cabecera&lt;/caption&gt;
+   &lt;tr&gt;
+       &lt;th&gt;Nombre&lt;/th&gt;
+       &lt;th&gt;Apellido 1&lt;/th&gt;
+       &lt;th&gt;Apellido 2&lt;/th&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+       &lt;td width=&quot;25%&quot;&gt;Jos&eacute;&lt;/td&gt;
+       &lt;td width=&quot;25%&quot;&gt;P&eacute;rez&lt;/td&gt;
+       &lt;td width=&quot;25%&quot;&gt;P&eacute;rez&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+       &lt;td&gt;Luis&lt;/td&gt;
+       &lt;td&gt;Rom&aacute;n&lt;/td&gt;
+       &lt;td&gt;S&aacute;nchez&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre> 
+          </td>
+        </tr>
+      </table>
+      <div align="center"> <a href="javascript:popUp('../ejemplos/19.html')">resultado</a> 
+      </div>
+      <br> <table width="100%" border="0">
+        <tr> 
+          <td width="33%"><a href="diez.htm"><img src="../imag/11.gif" alt="Ir a la p&aacute;gina anterior" title="Ir a p&aacute;gina anterior" width="80" height="20" border="0"></a></td>
+          <td width="34%"> <div align="center"><a href="contenidos.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image121','','../imag/3.gif',1)"><img src="../imag/2.gif" alt="Ir al índice de contenidos" name="Image121" width="80" height="20" border="0" id="Image121"></a></div></td>
+          <td width="33%"> <div align="right"><a href="doce.htm"><img src="../imag/10.gif" alt="Ir a la p&aacute;gina siguiente" title="Ir a la p&aacute;gina siguiente" width="80" height="20" border="0"></a></div></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" bgcolor="#CCCCCC">
+        <tr> 
+          <td width="33%"> <div align="left"><font color="#000000" size="-4">2002 a 2006</font></div></td>
+          <td width="34%" bgcolor="#CCCCCC"> <div align="center"><a href="../index.htm" title="Ir al documento inicial"><font color="#FFFFFF" size="-1"> 
+              <strong>manual de lenguaje html </strong></font></a></div></td>
+          <td width="33%"> <div align="right"><font color="#000000" size="-4">&Aacute;ngel 
+              R. Puente P&eacute;rez</font></div></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<table width="95%" border="0" align="center">
+  <tr> 
+    <td width="33%"> <div align="left"><a href="http://validator.w3.org/check/referer"> 
+        </a><img src="../imag/logo_manual2.GIF" alt="Logo Manual HTML" width="164" height="27"> 
+      </div></td>
+    <td width="34%"><div align="center"><a href="http://validator.w3.org/check/referer"><img src="../imag/w3c.gif" width="70" height="25" alt="HTML 4.01" title="Pulsa para validar el c&oacute;digo empleado" border="0"></a></div></td>
+    <td width="33%"><div align="right"><img src="../imag/logo_manual2.GIF" alt="Logo Manual HTML" width="164" height="27"></div></td>
+  </tr>
+</table>
+</body>
+</html>

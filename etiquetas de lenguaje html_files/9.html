@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Manual de lenguaje html. Colores de los v&iacute;nculos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META NAME="Title" CONTENT="Manual de Lenguaje HTML">
+<META NAME="Author" CONTENT="Ángel Ricardo Puente Pérez">
+<META NAME="Subject" CONTENT="Elaboracion de paginas web con el lenguaje HTML">
+<META NAME="Description" CONTENT="Manual de Lenguaje HTML de nivel inicial, medio y avanzado">
+<META NAME="Keywords" CONTENT="lenguaje html, manual, tutorial, curso, diseño web">
+<META NAME="Generator" CONTENT="Macromedia dreamweaver">
+<META NAME="Language" CONTENT="Spanish">
+<META NAME="Revisit" CONTENT="1 day">
+<META NAME="Distribution" CONTENT="Global">
+<META NAME="Robots" CONTENT="All">
+
+<link href="../paginas/hoja.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+}
+body {
+	background-color: #F4DAB3;
+}
+-->
+</style></head>
+
+<body link="red" vlink="black" alink="blue"  onLoad="MM_preloadImages('../imag/3.gif')">
+<table width="95%" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0" bgcolor="#CCCCCC">
+        <tr> 
+          <td width="33%"> <div align="left"><font color="#000000" size="-4"> 
+              220/03/04</font></div></td>
+          <td width="34%" bgcolor="#CCCCCC"> <div align="center"><a href="../index.htm" title="Ir al documento inicial"><font color="#FFFFFF" size="-1"> 
+              <strong>manual de lenguaje html</strong></font></a></div></td>
+          <td width="33%"> <div align="right"><font color="#000000" size="-4">&Aacute;ngel 
+              R. Puente P&eacute;rez</font></div></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" bgcolor="#F4DAB3">
+        <tr> 
+          <td width="33%"><a href="../paginas/catorce.htm#avanzado" title="Volver al punto anterior">anterior</a></td>
+          <td width="34%" bgcolor="#F4DAB3"> <div align="center"> 
+              <p><a href="../paginas/contenidos.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','../imag/3.gif',1)"><img src="../imag/2.gif" alt="Ir al índice de contenidos" name="Image1" width="80" height="20" border="0"></a><font color="#FFCC99"> 
+                </font></p>
+          </div></td>
+          <td width="33%"> <div align="right"></div></td>
+        </tr>
+      </table>
+      <p><b><font size="+1">15.7.- Modificar los colores de los v&iacute;nculos. 
+        <a name="15_7"></a></font></b></p>
+      <p align="justify"><strong>La forma m&aacute;s sencilla de modificar el aspecto (s&oacute;lo 
+        el color) de un v&iacute;nculo es dentro de la etiqueta <span class="etiquetas">&lt;body&gt;</span> 
+        con los atributos: </strong></p>
+      <ul>
+        <li>
+          <div align="justify"><span class="texto_codigo"><strong>link</strong></span><strong> podemos 
+            elegir el color que tendr&aacute; antes de ser visitado. Sustituir el 
+            azul que viene por defecto.</strong></div>
+        </li>
+        <li>
+          <div align="justify"><span class="texto_codigo"><strong>alink</strong></span><strong> (<span class="traduccion">actived 
+            link</span>) es el color que muestra cuando est&aacute; activado.</strong></div>
+        </li>
+        <li>
+          <div align="justify"><span class="texto_codigo"><strong>vlink</strong></span><strong> (<span class="traduccion">visited 
+            link</span>) es el color que muestra cuando el v&iacute;nculo ya ha 
+            sido visitado.</strong></div>
+        </li>
+      </ul>
+      <p><strong>Vamos a hacer una prueba en este documento. La sintaxis ser&iacute;a:</strong></p>
+      <table width="50%" border="0" align="center" bgcolor="#FFFFFF">
+        <tr> 
+          <td><pre>&lt;body link=&quot;red&quot; alink=&quot;blue&quot; vlink=&quot;black&quot;&gt;</pre></td>
+        </tr>
+      </table>
+      <p align="justify"><strong>Hemos puesto unos colores llamativos (y en su c&oacute;digo nombre) 
+        para que veas los efectos. L&oacute;gicamente, se pueden elegir otros 
+        colores y escribirlos con su c&oacute;digo hexadecimal.</strong></p>
+      <p><strong>Para a&ntilde;adir otros aspectos podemos crear una hoja de estilos 
+        CSS.</strong></p>
+      <p>&nbsp;</p>
+      <div align="center"> 
+        <table width="100%" border="0">
+          <tr> 
+            <td width="33%"><a href="../paginas/catorce.htm#avanzado" title="Volver al punto anterior">anterior</a></td>
+            <td width="34%"><div align="center"><font color="#FFCC99"> <a href="../paginas/contenidos.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','../imag/3.gif',1)"><img src="../imag/2.gif" alt="Ir al índice de contenidos" name="Image11" width="80" height="20" border="0" id="Image11"></a></font></div></td>
+            <td width="33%"><div align="right"></div></td>
+          </tr>
+        </table>
+      </div>
+      <table width="100%" border="0" bgcolor="#CCCCCC">
+        <tr> 
+          <td width="33%"> <div align="left"><font color="#000000" size="-4"> 
+              220/03/04</font></div></td>
+          <td width="34%" bgcolor="#CCCCCC"> <div align="center"><a href="../index.htm" title="Ir al documento incial"><font color="#FFFFFF" size="-1"> 
+              <strong>manual de lenguaje html</strong></font></a></div></td>
+          <td width="33%"> <div align="right"><font color="#000000" size="-4">&Aacute;ngel 
+              R. Puente P&eacute;rez</font></div></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<table width="95%" border="0" align="center">
+  <tr> 
+    <td width="33%"> <div align="left"><a href="http://validator.w3.org/check/referer"> 
+        </a><img src="../imag/logo_manual2.GIF" alt="Logo Manual HTML" width="164" height="27"> 
+      </div></td>
+    <td width="34%"><div align="center"><a href="http://validator.w3.org/check/referer"><img src="../imag/w3c.gif" width="70" height="25" alt="HTML 4.01" title="Pulsa para validar el c&oacute;digo empleado" border="0"></a></div></td>
+    <td width="33%"><div align="right"><img src="../imag/logo_manual2.GIF" alt="Logo Manual HTML" width="164" height="27"></div></td>
+  </tr>
+</table>
+</body>
+</html>

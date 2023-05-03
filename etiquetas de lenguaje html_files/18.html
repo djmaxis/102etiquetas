@@ -1,0 +1,302 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Manual de lenguaje html. P&aacute;gina 8</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="hoja.css" type="text/css">
+
+
+<META NAME="Title" CONTENT="Manual de Lenguaje HTML">
+<META NAME="Author" CONTENT="Ángel Ricardo Puente Pérez">
+<META NAME="Subject" CONTENT="Elaboracion de paginas web con el lenguaje HTML">
+<META NAME="Description" CONTENT="Manual de Lenguaje HTML de nivel inicial, medio y avanzado">
+<META NAME="Keywords" CONTENT="lenguaje html, manual, tutorial, curso, diseño web">
+<META NAME="Generator" CONTENT="Macromedia dreamweaver">
+<META NAME="Language" CONTENT="Spanish">
+<META NAME="Revisit" CONTENT="1 day">
+<META NAME="Distribution" CONTENT="Global">
+<META NAME="Robots" CONTENT="All">
+
+<script language="JavaScript" type="text/javascript">
+<!--
+<!--
+// Idea by:  Nic Wolfe (Nic@TimelapseProductions.com) -->
+<!-- Web URL:  http://fineline.xs.mw -->
+
+<!-- Begin
+function popUp(URL) {
+day = new Date();
+id = day.getTime();
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=yes,scrollbars=1,location=0,statusbar=1,status=1,menubar=0,resizable=1,width=450,height=300,left = 0,top = 0');");
+}
+// End 
+// -->
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link rel="shortcut icon" href="../imag/icono.ico">
+
+<style type="text/css">
+<!--
+body {
+	background-color: #F4DAB3;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+}
+-->
+</style></head>
+
+<body text="#330000" onLoad="MM_preloadImages('../imag/3.gif')">
+<table width="95%" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0" bgcolor="#CCCCCC">
+        <tr> 
+          <td width="33%"> <div align="left"><font color="#000000" size="-4">2002 a 2006 </font></div></td>
+          <td width="34%" bgcolor="#CCCCCC"> <div align="center"><a href="../index.htm" title="Ir al documento inicial"><font color="#FFFFFF" size="-1"> 
+              <strong>manual de lenguaje html </strong></font></a></div></td>
+          <td width="33%"> <div align="right"><font color="#000000" size="-4">&Aacute;ngel 
+              R. Puente P&eacute;rez</font></div></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" bgcolor="#F4DAB3">
+        <tr> 
+          <td width="33%"><a href="siete.htm"><img src="../imag/11.gif" alt="Ir a la p&aacute;gina anterior" title="Ir a p&aacute;gina anterior" width="80" height="20" border="0"></a></td>
+          <td width="34%"> <div align="center"> <a href="contenidos.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','../imag/3.gif',1)"><img src="../imag/2.gif" alt="Ir al índice de contenidos" name="Image12" width="80" height="20" border="0"></a></div></td>
+          <td width="33%"> <div align="right"><a href="nueve.htm"><img src="../imag/10.gif" alt="Ir a la p&aacute;gina siguiente" title="Ir a la p&aacute;gina siguiente" width="80" height="20" border="0"></a></div></td>
+        </tr>
+      </table>
+      <p class="titulo">7.- Listas.<a name="7"></a> </p>
+      <p><b>A menudo hay que hacer listas de objetos, de conceptos, de definiciones...</b></p>
+      <p><b>Las listas pueden ser <span class="palabras_clave">no numeradas</span> 
+        (el orden no importa) y <span class="palabras_clave">numeradas</span>:</b></p>
+      <p><b><font size="+1">7.1.- Listas no numeradas.<a name="7_1"></a></font></b></p>
+      <p align="justify"><b>Comienza el listado con la etiqueta <span class="etiquetas">&lt;ul&gt; 
+        </span>(<span class="english">unordered list</span>) y su final con la 
+        etiqueta de cierre <span class="etiquetas">&lt;/ul&gt;</span>. Cada objeto 
+        que forma la lista va precedido de la etiqueta <span class="etiquetas">&lt;li&gt;</span> 
+        (<span class="english">list item</span>) sin etiqueta de cierre.</b></p>
+      <table width="30%" border="0" align="center" bgcolor="#FFFFFF">
+        <tr> 
+          <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+Listas no numeradas
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Mis aficiones:
+&lt;ul&gt;
+&lt;li&gt; El cine.
+&lt;li&gt; La monta&ntilde;a.
+&lt;li&gt; La m&uacute;sica.
+&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre> 
+          </td>
+        </tr>
+      </table>
+      <div align="center"> 
+        <p><a href="javascript:popUp('../ejemplos/3.html')">resultado</a></p>
+        <p align="left"><b><font size="+1">7.2.- Listas numeradas.<a name="7_2"></a></font></b></p>
+      </div>
+      <p align="justify"><b>Comienza el listado con la etiqueta <span class="etiquetas">&lt;ol&gt;</span> 
+        (<span class="english">ordered list</span>) y su final con la etiqueta 
+        <span class="etiquetas">&lt;/ol&gt;</span>. Cada objeto que forma la lista 
+        va precedido, igual que en las anteriores de la etiqueta <span class="etiquetas">&lt;li&gt;</span> 
+        sin cierre.</b></p>
+      <table width="30%" border="0" align="center" bgcolor="#FFFFFF">
+        <tr> 
+          <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+Listas numeradas
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Mis preferencias:
+&lt;ol&gt;
+&lt;li&gt; Viajar.
+&lt;li&gt; Salir con mis amigos.
+&lt;li&gt; Dormir.
+&lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre> 
+          </td>
+        </tr>
+      </table>
+      <div align="center"> 
+        <p><a href="javascript:popUp('../ejemplos/4.html')">resultado</a></p>
+        <p align="left"><b><font size="+1">7.3.- Listas anidadas.<a name="7_3"></a></font></b></p>
+        <p align="justify"><b>Se pueden combinar unas listas dentro de otras: No 
+          numeradas y/o numeradas. Hay que tener, simplemente, cuidado en la colocaci&oacute;n 
+          de las etiquetas de apertura y cierre.</b></p>
+        <table width="30%" border="0" bgcolor="#FFFFFF">
+          <tr> 
+            <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt; 
+Listas anidadas
+&lt;/title&gt;            
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;h3&gt;Animales:&lt;h3&gt; 
+&lt;ul&gt; 
+&lt;li&gt; VERTEBRADOS.
+    &lt;ul&gt;
+    &lt;li&gt;Anfibios
+    &lt;li&gt;Peces
+    &lt;li&gt;Reptiles
+    &lt;li&gt;Aves
+    &lt;li&gt;Mam&iacute;feros
+    &lt;/ul&gt;
+&lt;li&gt; INVERTEBRADOS.
+    &lt;ul&gt;
+    &lt;li&gt;Insectos
+    &lt;li&gt;Ar&aacute;cnidos
+    &lt;li&gt;Crust&aacute;ceos
+    &lt;li&gt;Miri&aacute;podos
+    &lt;/ul&gt;
+&lt;/ul&gt; 
+&lt;/body&gt;            
+&lt;/html&gt;</pre> 
+            </td>
+          </tr>
+        </table>
+        <a href="javascript:popUp('../ejemplos/5.html')">resultado</a> 
+        <p align="justify"><b>Hemos incorporado la etiqueta de encabezado de tercer 
+          orden <span class="etiquetas">&lt;h3&gt;</span> para resaltar el concepto 
+          que se va a clasificar. (Recuerda que los encabezados van del <span class="etiquetas">&lt;h1&gt;</span> 
+          el mayor al <span class="etiquetas">&lt;h6&gt;</span> el menor).</b></p>
+        <p align="left"><b><font size="+1">7.4.- Listas de definiciones.<a name="7_4"></a></font></b></p>
+        <p align="justify"><b>Son apropiadas, como su nombre indica, para establecer 
+          listados de t&eacute;rminos con sus definiciones. Las etiquetas de apertura 
+          y cierre son <span class="etiquetas">&lt;dl&gt;</span> y <span class="etiquetas">&lt;/dl&gt;</span> 
+          (<span class="english">definition list</span>). Los conceptos a definir 
+          van con la etiqueta <span class="etiquetas">&lt;dt&gt;</span> (<span class="english">definition 
+          term</span>) y las definiciones con la etiqueta <span class="etiquetas">&lt;dd&gt;</span> 
+          (<span class="english">definition definition</span>).</b></p>
+        <table width="30%" border="0" bgcolor="#FFFFFF">
+          <tr> 
+            <td> <pre>&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt; Listas de definiciones
+&lt;/title&gt;          
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;dl&gt;
+&lt;dt&gt;Concepto 1
+&lt;dd&gt;Definici&oacute;n del Concepto 1
+&lt;dt&gt;Concepto 2
+&lt;dd&gt;Definici&oacute;n del concepto 2
+&lt;/dl&gt;
+&lt;/body&gt; 
+&lt;/html&gt;</pre> 
+            </td>
+          </tr>
+        </table>
+        <a href="javascript:popUp('../ejemplos/8.html')">resultado</a>
+        <p align="left" class="titulo">8.- Sangrados.<a name="8"></a></p>
+        <p align="justify"><b>Se realizan con la etiqueta <span class="etiquetas">&lt;blockquote&gt;</span> 
+          de apertura y su correspondiente de cierre. Aumentan, tambi&eacute;n, 
+          el interlineado, por eso se emplean para hacer una cita textual.</b></p>
+        <table width="50%" border="0" bgcolor="#FFFFFF">
+          <tr> 
+            <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+Sangrados
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Este texto est&aacute; justificado a la izquierda.
+&lt;blockquote&gt;
+&Eacute;ste est&aacute; sangrado respecto del anterior
+&lt;/blockquote&gt;
+&Eacute;ste vuelve a estar justificado a la izquierda.
+&lt;/body&gt; 
+&lt;/html&gt;</pre> 
+            </td>
+          </tr>
+        </table>
+        <a href="javascript:popUp('../ejemplos/6.html')">resultado</a> 
+        <p align="left"><b>Se puede utilizar m&aacute;s de una etiqueta si deseamos 
+          un sangrado mayor:</b></p>
+        <table width="50%" border="0" bgcolor="#FFFFFF">
+          <tr> 
+            <td> <pre>&lt;html&gt;
+&lt;head&gt; 
+&lt;title&gt;
+Sangrados m&uacute;ltiples
+&lt;/title&gt;
+&lt;/head&gt;          
+&lt;body&gt; 
+Este texto est&aacute; justificado a la izquierda. 
+&lt;blockquote&gt; 
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&Eacute;ste est&aacute; m&aacute;s sangrado 
+&lt;/blockquote&gt;  
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;        
+&Eacute;ste vuelve a estar justificado a la izquierda. 
+&lt;/body&gt; 
+&lt;/html&gt;</pre> 
+            </td>
+          </tr>
+        </table>
+        <a href="javascript:popUp('../ejemplos/7.html')">resultado</a><br>
+        <br>
+        <table width="100%" border="0">
+          <tr> 
+            <td width="33%"><a href="siete.htm"><img src="../imag/11.gif" alt="Ir a la p&aacute;gina anterior" title="Ir a p&aacute;gina anterior" width="80" height="20" border="0"></a></td>
+            <td width="34%"> <div align="center"><a href="contenidos.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image121','','../imag/3.gif',1)"><img src="../imag/2.gif" alt="Ir al índice de contenidos" name="Image121" width="80" height="20" border="0" id="Image121"></a></div></td>
+            <td width="33%"> <div align="right"><a href="nueve.htm"><img src="../imag/10.gif" alt="Ir a la p&aacute;gina siguiente" title="Ir a la p&aacute;gina siguiente" width="80" height="20" border="0"></a></div></td>
+          </tr>
+        </table>
+        <table width="100%" border="0" bgcolor="#CCCCCC">
+          <tr> 
+            <td width="33%"> <div align="left"><font color="#000000" size="-4">2002 a 2006</font></div></td>
+            <td width="34%" bgcolor="#CCCCCC"> <div align="center"><a href="../index.htm" title="Ir al documento inicial"><font color="#FFFFFF" size="-1"> 
+                <strong>manual de lenguaje html </strong></font></a></div></td>
+            <td width="33%"> <div align="right"><font color="#000000" size="-4">&Aacute;ngel 
+                R. Puente P&eacute;rez</font></div></td>
+          </tr>
+        </table>
+      </div>
+</td>
+  </tr>
+</table>
+<table width="95%" border="0" align="center">
+  <tr> 
+    <td width="33%"> <div align="left"><a href="http://validator.w3.org/check/referer"> 
+        </a><img src="../imag/logo_manual2.GIF" alt="Logo Manual HTML" width="164" height="27"> 
+      </div></td>
+    <td width="34%"><div align="center"><a href="http://validator.w3.org/check/referer"><img src="../imag/w3c.gif" width="70" height="25" alt="HTML 4.01" title="Pulsa para validar el c&oacute;digo empleado" border="0"></a></div></td>
+    <td width="33%"><div align="right"><img src="../imag/logo_manual2.GIF" alt="Logo Manual HTML" width="164" height="27"></div></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Manual de lenguaje html. P&aacute;gina 14</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="hoja.css" type="text/css">
+
+<META NAME="Title" CONTENT="Manual de Lenguaje HTML">
+<META NAME="Author" CONTENT="Ángel Ricardo Puente Pérez">
+<META NAME="Subject" CONTENT="Elaboracion de paginas web con el lenguaje HTML">
+<META NAME="Description" CONTENT="Manual de Lenguaje HTML de nivel inicial, medio y avanzado">
+<META NAME="Keywords" CONTENT="lenguaje html, manual, tutorial, curso, diseño web">
+<META NAME="Generator" CONTENT="Macromedia dreamweaver">
+<META NAME="Language" CONTENT="Spanish">
+<META NAME="Revisit" CONTENT="1 day">
+<META NAME="Distribution" CONTENT="Global">
+<META NAME="Robots" CONTENT="All">
+
+
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+<!--
+// Idea by:  Nic Wolfe (Nic@TimelapseProductions.com) -->
+<!-- Web URL:  http://fineline.xs.mw -->
+
+<!-- Begin
+function popUp(URL) {
+day = new Date();
+id = day.getTime();
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=yes,scrollbars=1,location=0,statusbar=1,status=1,menubar=0,resizable=1,width=300,height=280,left = 0,top = 0');");
+}
+// End 
+// -->
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link rel="shortcut icon" href="../imag/icono.ico">
+
+
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+}
+body {
+	background-color: #F4DAB3;
+}
+-->
+</style></head>
+
+<body text="#330000" onLoad="MM_preloadImages('../imag/3.gif','../ima/b.gif')">
+<table width="95%" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0" bgcolor="#CCCCCC">
+        <tr> 
+          <td width="33%"> <div align="left"><font color="#000000" size="-4">2002 a 2006 </font></div></td>
+          <td width="34%" bgcolor="#CCCCCC"> <div align="center"><a href="../index.htm" title="Ir al documento inicial"><font color="#FFFFFF" size="-1"> 
+              <strong>manual de lenguaje html </strong></font></a></div></td>
+          <td width="33%"> <div align="right"><font color="#000000" size="-4">&Aacute;ngel 
+              R. Puente P&eacute;rez</font></div></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" bgcolor="#F4DAB3">
+        <tr> 
+          <td width="33%"><a href="trece.htm"><img src="../imag/11.gif" alt="Ir a la p&aacute;gina anterior" title="Ir a p&aacute;gina anterior" width="80" height="20" border="0"></a></td>
+          <td width="34%"> <div align="center"> <a href="contenidos.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','../imag/3.gif',1)"><img src="../imag/2.gif" alt="Ir al índice de contenidos" name="Image12" width="80" height="20" border="0"></a></div></td>
+          <td width="33%"> <div align="right"><a href="quince.htm"><img src="../imag/10.gif" alt="Ir a la p&aacute;gina siguiente" title="Ir a la p&aacute;gina siguiente" width="80" height="20" border="0"></a></div></td>
+        </tr>
+      </table>
+      <p class="titulo">15.- V&iacute;nculos.<a name="15"></a></p>
+      <p align="justify"><b>Es una de las herramientas m&aacute;s interesantes de los documentos 
+        html. La sintaxis para establecer un enlace es: <span class="etiquetas">&lt;a 
+        href=&quot;destino&quot;&gt;</span><span class="palabras_clave">texto</span><span class="etiquetas">&lt;/a&gt;</span></b></p>
+      <p align="justify"><b>Donde <span class="texto_codigo">destino</span> es el documento con 
+        el que se enlaza y <span class="palabras_clave">texto</span> es la palabra 
+        o palabras que, al pulsar, nos llevan a ese destino (tambi&eacute;n puede 
+        ser una imagen).</b></p>
+      <p><b><font size="+1">15.1.- V&iacute;nculos a otro documento del mismo 
+        sitio.<a name="15_1"></a></font></b></p>
+      <p align="justify"><b>Nuestro sitio estar&aacute; formado por varios <span class="palabras_clave">archivos</span> 
+        generadores de varios <span class="palabras_clave">documentos</span>. 
+        Los documentos tendr&aacute;n la extensi&oacute;n <span class="nombre_archivo">.html</span> 
+        (o <span class="nombre_archivo">.htm</span>). Para establecer el v&iacute;nculo 
+        escribiremos sencillamente el nombre del documento en el destino y, entre 
+        las etiquetas de apertura y cierre la palabra o palabras que activar&aacute;n 
+        el v&iacute;nculo.</b></p>
+      <p align="justify"><b>Como ejemplo vamos a establecer un enlace a la primera p&aacute;gina 
+        de este sitio (primer documento) cuyo archivo tiene como nombre <span class="nombre_archivo">index.htm</span></b></p>
+      <table width="30%" border="0" align="center" bgcolor="#FFFFFF">
+        <tr> 
+          <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+V&iacute;nculos 1
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;
+&lt;a href=&quot;index.htm&quot;&gt;
+Ir al inicio de este curso
+&lt;/a&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre> 
+          </td>
+        </tr>
+      </table>
+      <div align="center"> <a href="javascript:popUp('26.html')">resultado</a> 
+      </div>
+      <p><b><font size="+1">15.2.- V&iacute;nculos a otro documento externo al 
+        sitio.<a name="15_2"></a></font></b></p>
+      <p align="justify"><b>En este caso en destino deberemos escribir toda la <span class="palabras_clave">direcci&oacute;n 
+        URL</span> del sitio.</b></p>
+      <p align="justify"><b>Vamos a establecer un enlace a la p&aacute;gina del buscador Google 
+        cuya direcci&oacute;n URL es <span class="palabras_clave">http://www.google.es</span></b></p>
+      <table width="36%" border="0" bgcolor="#FFFFFF" align="center">
+        <tr> 
+          <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+V&iacute;nculos 2
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;
+&lt;a href=&quot;http://www.google.es&quot;&gt;
+Ir a Google
+&lt;/a&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre> 
+          </td>
+        </tr>
+      </table>
+      <div align="center"><a href="javascript:popUp('27.html')">resultado</a> 
+      </div>
+      <p align="justify"><b>Muchas veces puede resultar interesante escribir la propia 
+        direcci&oacute;n <span class="palabras_clave">URL</span> como activador 
+        del v&iacute;nculo:</b></p>
+      <table width="30%" border="0" align="center" bgcolor="#FFFFFF">
+        <tr> 
+          <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+V&iacute;nculos 3
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;
+Ir a Google:&lt;br&gt;
+&lt;a href=&quot;http://www.google.es&quot;&gt;
+http://www.google.es&lt;/a&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre> 
+          </td>
+        </tr>
+      </table>
+      <div align="center"><a href="javascript:popUp('28.html')">resultado</a></div>
+      <p align="left"><b><font size="+1">15.3.- V&iacute;nculos a otra parte del 
+        mismo documento.<a name="15_3"></a></font></b></p>
+      <p align="justify"><b>A veces cuando el documento es muy extenso conviene establecer 
+        formas r&aacute;pidas para subir o bajar a una parte determinada del documento.</b></p>
+      <p align="justify"><b>Para realizar esto, primero hay que establecer un <span class="palabras_clave">ancla</span> 
+        o <span class="palabras_clave">marca</span> en la/s parte/s del documento 
+        a los que queremos acceder de forma r&aacute;pida.</b></p>
+      <p align="justify"><b>La sintaxis del ancla es <span class="etiquetas">&lt;a 
+        name=&quot;ancla1</span></b><b><span class="etiquetas">&quot;&gt;&lt;/a&gt;</span> 
+        poni&eacute;ndolo en el punto de destino. No hace fata que haya nada entre 
+        la etiqueta de apertura y cierre.</b></p>
+      <p align="justify"><b>En el punto activador escribiremos <span class="etiquetas">&lt;a 
+        href =&quot;#ancla1&quot;&gt; </span>Ir a la parte tal <span class="etiquetas">&lt;/a&gt;</span>.</b></p>
+      <p align="justify"><b>Como ejemplo vamos a movernos por las partes anteriores 
+        a esta l&iacute;nea del punto en el que estamos.</b></p>
+      <p align="justify"><b>En primer lugar hemos nombrado las <span class="palabras_clave">anclas</span> 
+        con el mismo nombre que tienen los diferentes apartados (cambiando el 
+        punto por un gui&oacute;n bajo) a los que vamos a desplazarnos:</b></p>
+      <table width="90%" border="1" align="center">
+        <tr> 
+          <td width="30%"> <div align="center"></div></td>
+          <td bgcolor="#FFFFFF"> <div align="center">c&oacute;digo</div></td>
+        </tr>
+        <tr> 
+          <td width="30%"><b><a href="#15">Ir al apartado 15</a> </b></td>
+          <td bgcolor="#FFFFFF">&lt;a href=&quot;#15&gt;Ir al apartado 15&lt;/a&gt;</td>
+        </tr>
+        <tr> 
+          <td width="30%"><b><a href="#15_1">Ir al apartado 15.1</a></b></td>
+          <td bgcolor="#FFFFFF">&lt;a href=&quot;#15_1&gt;Ir al apartado 15.1&lt;/a&gt;</td>
+        </tr>
+        <tr> 
+          <td width="30%"><b><a href="#15_2">Ir al apartado 15.2</a></b></td>
+          <td bgcolor="#FFFFFF">&lt;a href=&quot;#15_2&gt;Ir al apartado 15.2&lt;/a&gt;</td>
+        </tr>
+        <tr> 
+          <td width="30%"><b><a href="#15_3">Ir al apartado 15.3</a></b></td>
+          <td bgcolor="#FFFFFF">&lt;a href=&quot;#15_3&gt;Ir al apartado 15.3&lt;/a&gt;</td>
+        </tr>
+      </table>
+      <p align="left"><b><font size="+1">15.4.- V&iacute;nculos a una parte concreta 
+        de otro documento de nuestro sitio. <a name="15_4"></a></font></b></p>
+      <p align="justify"><b>Se pueden combinar este &uacute;ltimo tipo de enlaces con el v&iacute;nculo 
+        a otro documento de nuestro sitio.</b></p>
+      <p align="justify"><b>La sintaxis ser&iacute;a <span class="etiquetas">&lt;a href=&quot;paginax.htm#ancla&quot;&gt;</span> 
+        Ir al apartado tal de tal p&aacute;gina <span class="etiquetas">&lt;/a&gt;</span></b></p>
+      <table width="35%" border="0" align="center" bgcolor="#FFFFFF">
+        <tr> 
+          <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+V&iacute;nculos 4
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;
+&lt;a href=&quot;diez.htm#13_2&quot;&gt;
+Ir al apartado 13.2 de este
+curso
+&lt;/a&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre> 
+          </td>
+        </tr>
+      </table>
+      <div align="center"><a href="javascript:popUp('29.html')">resultado</a> 
+        (maximiza la ventana)</div>
+      <p align="left">&nbsp;</p>
+      <p align="left"><b><font size="+1">15.5.- V&iacute;nculos de correo electr&oacute;nico. 
+        <a name="15_5"></a> </font></b></p>
+      <p align="justify"><b>Vamos a ver los enlaces a una direcci&oacute;n de correo electr&oacute;nico. 
+        Cuando el navegante pinche sobre el activador del v&iacute;nculo, se abrir&aacute; 
+        el programa de correo con la direcci&oacute;n del destinatario ya escrita 
+        en el mensaje.</b></p>
+      <p><b>La sintaxis es <span class="etiquetas">&lt;a href=&quot;mailto:login@servidor.es&quot;&gt;</span> 
+        M&aacute;ndame un mensaje <span class="etiquetas">&lt;/a&gt;</span></b></p>
+      <table width="50%" border="0" align="center" bgcolor="#FFFFFF">
+        <tr> 
+          <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+V&iacute;nculos 5
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;
+&lt;a href=&quot;mailto:apuente@roble.pntic.mec.es&quot;&gt;
+Dime lo que piensas de este curso
+&lt;/a&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre> 
+          </td>
+        </tr>
+      </table>
+      <div align="center"><a href="javascript:popUp('30.html')">resultado</a></div>
+      <p><b><font size="+1">15.6.- Imagen como v&iacute;nculo a otro documento. 
+        <a name="15_6"></a></font></b></p>
+      <p><b>En lugar de texto podemos utilizar una imagen como v&iacute;nculo.</b></p>
+      <p align="justify"><b>En primer lugar deberemos escribir la etiqueta de apertura del v&iacute;nculo 
+        y luego la etiqueta de inclusi&oacute;n de la imagen cerrando, posteriormente, 
+        la etiqueta del v&iacute;nculo.</b></p>
+      <p align="justify"><b>Para este tipo de v&iacute;nculos se suelen emplear peque&ntilde;as 
+        im&aacute;genes, aunque, a veces, tambi&eacute;n se utilizan im&aacute;genes 
+        de gran formato (sobre todo en los portales de los sitios).</b></p>
+      <table width="37%" border="0" align="center" bgcolor="#FFFFFF">
+        <tr> 
+          <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+V&iacute;nculos 6
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;
+Visita la p&aacute;gina de TERRA:&lt;P&gt;
+&lt;a href=&quot;http://www.terra.es&quot;&gt;
+&lt;img src=&quot;imag/logo_terra.gif&quot;&gt;
+&lt;/a&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre> 
+          </td>
+        </tr>
+      </table>
+      <div align="center"><a href="javascript:popUp('31.html')">resultado</a></div>
+      <p align="justify"><b>Para eliminar este borde tan antiest&eacute;tico que se coloca alrededor 
+        de la imagen tenemos el atributo <span class="texto_codigo">border=&quot;0&quot;</span></b></p>
+      <table width="30%" border="0" align="center" bgcolor="#FFFFFF">
+        <tr> 
+          <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+V&iacute;nculos 7
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;
+Visita la p&aacute;gina de TERRA:&lt;p&gt;
+&lt;a href=&quot;http://www.terra.es&quot;&gt;
+&lt;img src=&quot;imag/logo_terra.gif&quot;
+border=&quot;0&quot;&gt;
+&lt;/a&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre> 
+          </td>
+        </tr>
+      </table>
+      <div align="center"><a href="javascript:popUp('32.html')">resultado</a></div>
+      <table width="100%" border="0">
+        <tr> 
+          <td width="50%"><strong>Si deseas profundizar en este tema, pulsa el 
+            bot&oacute;n...<a name="avanzado"></a></strong></td>
+          <td width="50%"><div align="right"><a href="../avanzado/color_vin.htm#15_7" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','../ima/b.gif',1)"><img src="../ima/a.gif" alt="Si deseas saber más" name="Image1" width="40" height="40" border="0"></a></div></td>
+        </tr>
+      </table>
+      <br> <table width="100%" border="0">
+        <tr> 
+          <td width="33%"><a href="trece.htm"><img src="../imag/11.gif" alt="Ir a la p&aacute;gina anterior" title="Ir a p&aacute;gina anterior" width="80" height="20" border="0"></a></td>
+          <td width="34%"> <div align="center"><a href="contenidos.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image121','','../imag/3.gif',1)"><img src="../imag/2.gif" alt="Ir al índice de contenidos" name="Image121" width="80" height="20" border="0" id="Image121"></a></div></td>
+          <td width="33%"> <div align="right"><a href="quince.htm"><img src="../imag/10.gif" alt="Ir a la p&aacute;gina siguiente" title="Ir a la p&aacute;gina siguiente" width="80" height="20" border="0"></a></div></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" bgcolor="#CCCCCC">
+        <tr> 
+          <td width="33%"> <div align="left"><font color="#000000" size="-4">2002 a 2006</font></div></td>
+          <td width="34%" bgcolor="#CCCCCC"> <div align="center"><a href="../index.htm" title="Ir al documento inicial"><font color="#FFFFFF" size="-1"> 
+              <strong>manual de lenguaje html </strong></font></a></div></td>
+          <td width="33%"> <div align="right"><font color="#000000" size="-4">&Aacute;ngel 
+              R. Puente P&eacute;rez</font></div></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<table width="95%" border="0" align="center">
+  <tr> 
+    <td width="33%"> <div align="left"><a href="http://validator.w3.org/check/referer"> 
+        </a><img src="../imag/logo_manual2.GIF" alt="Logo Manual HTML" width="164" height="27"> 
+      </div></td>
+    <td width="34%"><div align="center"><a href="http://validator.w3.org/check/referer"><img src="../imag/w3c.gif" width="70" height="25" alt="HTML 4.01" title="Pulsa para validar el c&oacute;digo empleado" border="0"></a></div></td>
+    <td width="33%"><div align="right"><img src="../imag/logo_manual2.GIF" alt="Logo Manual HTML" width="164" height="27"></div></td>
+  </tr>
+</table>
+</body>
+</html>

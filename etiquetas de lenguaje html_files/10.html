@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Manual de lenguaje html. P&aacute;gina 13</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="hoja.css" type="text/css">
+<META NAME="Title" CONTENT="Manual de Lenguaje HTML">
+<META NAME="Author" CONTENT="Ángel Ricardo Puente Pérez">
+<META NAME="Subject" CONTENT="Elaboracion de paginas web con el lenguaje HTML">
+<META NAME="Description" CONTENT="Manual de Lenguaje HTML de nivel inicial, medio y avanzado">
+<META NAME="Keywords" CONTENT="lenguaje html, manual, tutorial, curso, diseño web">
+<META NAME="Generator" CONTENT="Macromedia dreamweaver">
+<META NAME="Language" CONTENT="Spanish">
+<META NAME="Revisit" CONTENT="1 day">
+<META NAME="Distribution" CONTENT="Global">
+<META NAME="Robots" CONTENT="All">
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+<!--
+// Idea by:  Nic Wolfe (Nic@TimelapseProductions.com) -->
+<!-- Web URL:  http://fineline.xs.mw -->
+
+<!-- Begin
+function popUp(URL) {
+day = new Date();
+id = day.getTime();
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=yes,scrollbars=1,location=0,statusbar=1,status=1,menubar=0,resizable=1,width=300,height=280,left = 0,top = 0');");
+}
+// End 
+// -->
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link rel="shortcut icon" href="../imag/icono.ico">
+
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+}
+body {
+	background-color: #F4DAB3;
+}
+-->
+</style></head>
+
+<body text="#330000" onLoad="MM_preloadImages('../imag/3.gif')">
+<table width="95%" border="0" align="center">
+  <tr>
+    <td><table width="100%" border="0" bgcolor="#CCCCCC">
+        <tr> 
+          <td width="33%"> <div align="left"><font color="#000000" size="-4">2002 a 2006 </font></div></td>
+          <td width="34%" bgcolor="#CCCCCC"> <div align="center"><a href="../index.htm" title="Ir al documento inicial"><font color="#FFFFFF" size="-1"> 
+              <strong>manual de lenguaje html </strong></font></a></div></td>
+          <td width="33%"> <div align="right"><font color="#000000" size="-4">&Aacute;ngel 
+              R. Puente P&eacute;rez</font></div></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" bgcolor="#F4DAB3">
+        <tr> 
+          <td width="33%"><a href="doce.htm"><img src="../imag/11.gif" alt="Ir a la p&aacute;gina anterior" title="Ir a p&aacute;gina anterior" width="80" height="20" border="0"></a></td>
+          <td width="34%"> <div align="center"><a href="contenidos.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image121','','../imag/3.gif',1)"><img src="../imag/2.gif" alt="Ir al índice de contenidos" name="Image121" width="80" height="20" border="0" id="Image121"></a></div></td>
+          <td width="33%"> <div align="right"><a href="catorce.htm"><img src="../imag/10.gif" alt="Ir a la p&aacute;gina siguiente" title="Ir a la p&aacute;gina siguiente" width="80" height="20" border="0"></a></div></td>
+        </tr>
+      </table>
+      <p class="titulo">14.- Im&aacute;genes.<a name="14"></a></p>
+      <p align="justify"><b>La etiqueta para introducir una imagen en nuestra p&aacute;gina es 
+        <span class="etiquetas">&lt;img src=&quot;nombre.gif&quot;&gt;</span> 
+        (<span class="texto_codigo">src</span> de <span class="english">source</span> 
+        en ingl&eacute;s <span class="traduccion">fuente</span> u origen de la 
+        imagen) y siendo <span class="texto_codigo">nombre</span> el nombre que 
+        tiene la imagen y <span class="nombre_archivo">.gif</span> su formato.</b></p>
+      <p align="justify"><b>La etiqueta funcionar&aacute; bien siempre y cuando la imagen est&eacute; 
+        en la misma carpeta en la que se encuentra la p&aacute;gina web desde 
+        la que la llamamos. Es habitual (y recomendable) colocar todas las im&aacute;genes 
+        en otra carpeta interna, en ese caso, habr&aacute; que darle la ruta en 
+        la cual se encuentra nuestra imagen. Supongamos que la imagen <span class="nombre_archivo">nombre.gif</span> 
+        se encuentra en una carpeta denominada<span class="nombre_archivo"> </span><span class="palabras_clave">imag</span>, 
+        pues bien, la etiqueta ser&iacute;a <span class="etiquetas">&lt;img src=&quot;imag/nombre.gif&quot;&gt; 
+        </span></b></p>
+      <p><b>Veamos un ejemplo:</b></p>
+      <p align="center"><img src="../imag/riglos2.jpg" width="150" height="230" alt="Mallos de Riglos (Huesca)"></p>
+      <p align="justify"><b>En este caso el formato de la imagen es<span class="nombre_archivo"> 
+        .jpg</span> (junto con el <span class="nombre_archivo">.gif</span> y el 
+        <span class="nombre_archivo">.png</span> los formatos de im&aacute;genes 
+        m&aacute;s habituales en internet). La imagen se denomina <span class="nombre_archivo">riglos2.jpg</span></b></p>
+      <table width="36%" border="0" align="center" bgcolor="#FFFFFF">
+        <tr> 
+          <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+Im&aacute;genes 1
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;
+&lt;img src=&quot;imag/riglos2.jpg&quot;&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html</pre> 
+          </td>
+        </tr>
+      </table>
+      <div align="center"> 
+        <p><a href="javascript:popUp('23.html')">resultado</a> </p>
+        <p align="left"><b><font size="+1">14.1.- Atributos de la imagen width 
+          y height.<a name="14_1"></a></font></b></p>
+        <p align="justify"><b>Es muy importante introducir las medidas de la imagen 
+          (las podemos averiguar desde un programa gr&aacute;fico como <span class="palabras_clave">PhotoShop</span>) 
+          dentro de la etiqueta <span class="etiquetas">&lt;img&gt;</span>. De 
+          esta manera cuando el navegador va recorriendo la p&aacute;gina reserva 
+          el espacio justo para la imagen y, el resto de la p&aacute;gina se va 
+          cargando sin problemas mientra se acaba de cargar la imagen. En nuestro 
+          caso la imagen tiene 150 de ancho y 230 de alto. Escribir&iacute;amos:</b></p>
+        <table width="40%" border="0" bgcolor="#FFFFFF">
+          <tr> 
+            <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+Im&aacute;genes 2
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;
+&lt;img src=&quot;imag/riglos2.jpg&quot;
+        width=&quot;150&quot; height=&quot;230&quot;&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre> 
+            </td>
+          </tr>
+        </table>
+        <p><a href="javascript:popUp('24.html')">resultado</a> </p>
+        <p align="left"><b><font size="+1">14.2.- Texto alternativo.<a name="14_2"></a></font></b></p>
+        <p align="justify"><b>Es otro atributo que se coloca por varios motivos, 
+          el principal es que aquellas personas que visiten nuestra p&aacute;gina 
+          sin descargarse las im&aacute;genes (habitual en los que tienen una 
+          mala conexi&oacute;n y no desean eternas descargas) tengan, al menos, 
+          una orientaci&oacute;n del contenido de la misma. Debe ser una descripci&oacute;n 
+          corta del tema de la imagen. Se introduce con la cadena <span class="texto_codigo">alt=&quot;descripci&oacute;n 
+          de la imagen&quot;</span> y, al ser un atributo, se coloca como los 
+          dos anteriores, dentro de la etiqueta <span class="etiquetas">&lt;img&gt;</span>.</b></p>
+        <table width="40%" border="0" bgcolor="#FFFFFF">
+          <tr> 
+            <td> <pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+Im&aacute;genes 3
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;
+&lt;img src=&quot;imag/riglos2.jpg&quot;
+      width=&quot;150&quot; height=&quot;230&quot;
+      alt=&quot;Mallos de Riglos (Huesca)&quot;&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre> 
+            </td>
+          </tr>
+        </table>
+        <a href="javascript:popUp('25.html')">resultado</a> 
+        <p align="justify"><b>Cuando el visitante (si navega con el Internet Explorer) se acerque con el cursor a la imagen, 
+          aparecer&aacute; un rect&aacute;ngulo con el texto alternativo:</b></p>
+        <table width="100%" bgcolor="#CCCCCC">
+		<tr>
+		<td>
+		  <div align="justify"><strong>Nota: El hecho de que aparezca el texto alternativo al acercarnos con el cursor a la imagen, es una desviaci&oacute;n del Explorer. Existe otro atributo para que esto se produzca independientemente del navegador que empleemos. Es el atributo <span class="texto_codigo">title</span>. </strong></div></td>
+		</tr>
+		</table>
+		        <p align="center"><img src="../ima/a6.gif" alt="Texto Alt" width="176" height="162"></p>
+        <p align="left"><b>Y cuando navegue sin bajarse las im&aacute;genes se 
+          ver&aacute; as&iacute;:</b></p>
+        <p align="center"><img src="../ima/a7.gif" alt="Imagen no cargada" width="308" height="148"></p>
+        <p align="left"><strong><font size="+1">14.3.- Colocar una imagen como 
+          fondo de la p&aacute;gina. <a name="14_3"></a></font></strong></p>
+        <p align="justify"><strong>Simplemente tenemos que colocar dentro de la etiqueta 
+          <span class="etiquetas">&lt;body&gt;</span> el atributo <span class="texto_codigo">background</span> 
+          con el nombre y/o direcci&oacute;n de la imagen que queremos colocar. 
+          Supongamos que quiero colocar una imagen denominada <span class="nombre_archivo">claro1.gif</span> 
+          que est&aacute; dentro de la carpeta <span class="palabras_clave">imag</span>. 
+          El c&oacute;digo ser&aacute; el siguiente:</strong></p>
+        <table width="40%" border="0" bgcolor="#FFFFFF">
+          <tr>
+            <td><pre>&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;
+Imagen como fondo de p&aacute;gina
+&lt;/title&gt;
+&lt;/head&gt;
+&lt;body background=&quot;imag/claro1.gif&quot;&gt;
+&lt;center&gt;
+&lt;h2&gt;
+Esta p&aacute;gina tiene una imagen de fondo.
+&lt;/h2&gt;
+&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></td>
+          </tr>
+        </table>
+		<a href="javascript:popUp('../ejemplos/24.html')"> resultado </a> <br>
+        <table width="100%" border="0">
+          <tr> 
+            <td width="33%"><a href="doce.htm"><img src="../imag/11.gif" alt="Ir a la p&aacute;gina anterior" title="Ir a p&aacute;gina anterior" width="80" height="20" border="0"></a></td>
+            <td width="34%"> <div align="center"><a href="contenidos.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','../imag/3.gif',1)"><img src="../imag/2.gif" alt="Ir al índice de contenidos" name="Image12" width="80" height="20" border="0"></a></div></td>
+            <td width="33%"> <div align="right"><a href="catorce.htm"><img src="../imag/10.gif" alt="Ir a la p&aacute;gina siguiente" title="Ir a la p&aacute;gina siguiente" width="80" height="20" border="0"></a></div></td>
+          </tr>
+        </table>
+        <table width="100%" border="0" bgcolor="#CCCCCC">
+          <tr> 
+            <td width="33%"> <div align="left"><font color="#000000" size="-4">2002 a 2006</font></div></td>
+            <td width="34%" bgcolor="#CCCCCC"> <div align="center"><a href="../index.htm" title="Ir al documento inicial"><font color="#FFFFFF" size="-1"> 
+                <strong>manual de lenguaje html </strong></font></a></div></td>
+            <td width="33%"> <div align="right"><font color="#000000" size="-4">&Aacute;ngel 
+                R. Puente P&eacute;rez</font></div></td>
+          </tr>
+        </table>
+      </div>
+
+</td>
+  </tr>
+</table>
+<table width="95%" border="0" align="center">
+  <tr> 
+    <td width="33%"> <div align="left"><a href="http://validator.w3.org/check/referer"> 
+        </a><img src="../imag/logo_manual2.GIF" alt="Logo Manual HTML" width="164" height="27"> 
+      </div></td>
+    <td width="34%"><div align="center"><a href="http://validator.w3.org/check/referer"><img src="../imag/w3c.gif" width="70" height="25" alt="HTML 4.01" title="Pulsa para validar el c&oacute;digo empleado" border="0"></a></div></td>
+    <td width="33%"><div align="right"><img src="../imag/logo_manual2.GIF" alt="Logo Manual HTML" width="164" height="27"></div></td>
+  </tr>
+</table>
+</body>
+</html>
